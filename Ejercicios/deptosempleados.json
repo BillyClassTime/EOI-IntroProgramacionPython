@@ -1,0 +1,15 @@
+{
+    "departamento": 8,
+    "nombredepto": "Ventas",
+    "director": "Juan Rodriguez",
+    "empleados": [
+        {
+            "nombre": "Pedro",
+            "apellido": "Fernandez"
+        },
+        {
+            "nombre": "Jacinto",
+            "apellido": "Benavente"
+        }
+    ]
+}
