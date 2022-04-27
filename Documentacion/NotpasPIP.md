@@ -8,7 +8,7 @@ py get-pip.py
 Variables del sistema
 
 ```
-C:\Users\USUARIO\AppData\Local\Programs\Python\Python310\Scripts
+C:\Users\REPLAZAR POR VUESTRO USUARIO\AppData\Local\Programs\Python\Python310\Scripts
 ```
 
 Actualizar pip
