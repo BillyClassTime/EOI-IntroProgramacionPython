@@ -39,12 +39,12 @@ print(f"El/Los hombre(s) con mayor edad tiene(n) {edadmayor_hombre} años")
 #for i in mujeres:
 #    promedio_edadmujeres+=i
 #print("La edad promedio en las mujeres es:",promedio_edadmujeres//len(mujeres))
-promedio_edadmujeres=sum(mujeres)/len(mujeres) # Equivale a las lineas 33,34,35
+promedio_edadmujeres=sum(mujeres)/len(mujeres) # Equivale a las lineas 38,39,40,41
 print("La edad promedio en las mujeres es:",promedio_edadmujeres)
 
 #promedio_edadhombres=0
 #for i in hombres:
 #    promedio_edadhombres+=i
 #print("La edad promedio en los hombres es:",promedio_edadhombres//len(hombres))
-promedio_edadhombres=sum(hombres)/len(hombres) # Equivale a las lineas 40,41,42
+promedio_edadhombres=sum(hombres)/len(hombres) # Equivale a las lineas 45,46,47 y 48
 print("La edad promedio en las hombres es:",promedio_edadhombres)
