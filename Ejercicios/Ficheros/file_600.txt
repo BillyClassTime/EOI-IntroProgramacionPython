@@ -1,2 +1,4 @@
 valores dentro de un fichero de text
 otro valor
+siguiente valor
+ultimo valor
