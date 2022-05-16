@@ -1,6 +1,9 @@
 from random import randint
 from os.path import exists
-#from FuncionesClasesModulos.Ejercicios1_Con_ClasificaGenero import ClasificaGenero
+import sys
+sys.path.append('.\Ejercicios\FuncionesClasesModulos')
+#import Ejercicios1_Con_ClasificaGenero
+from Ejercicios1_Con_ClasificaGenero import ClasificaGenero as Clasi
 personas=[]
 for n in range(1,101):
     genero=randint(0,1) #0 para chicas y el 1 los chicos
@@ -9,6 +12,8 @@ for n in range(1,101):
     else:
         personas.append("M")
 print(f'Lista de personas:\n{personas}')
+
+Clasi(personas)
 
 try:
     file='./Ejercicios/Ficheros/Datos_ejercicios01.txt'
