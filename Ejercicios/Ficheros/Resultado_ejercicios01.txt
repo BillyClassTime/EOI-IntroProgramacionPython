@@ -1,0 +1,3 @@
+El porcentaje de mujeres es del: 45%
+El porcentaje de hombres es del: 55%
+Hay más hombres que mujeres
