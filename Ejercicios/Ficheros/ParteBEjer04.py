@@ -1,6 +1,7 @@
 def SegundaParte():
     file='./Ejercicios/Ficheros/Data_ejercicios04.txt'
     fichero=None
+    fichero_resultado=None
     try:
         fichero=open(file,'rt',encoding='UTF-8')
         contenido=fichero.read()
@@ -38,6 +39,7 @@ def SegundaParte():
     finally:
         if fichero!=None:
             fichero.close()
-
+        if fichero_resultado!=None:
+            fichero_resultado.close()
 if __name__=="__main__":
     SegundaParte()

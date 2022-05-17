@@ -1,15 +1,15 @@
 Resultado del ejercio 04 de colecciones con ficheros
 ==========================================================================================
-La ciudad con el promedio anual de temperatura mas alta es:Cuenca         33.00 ºC
-La ciudad con el promedio anual de temperatura mas baja es:Albacete       18.00 ºC
+La ciudad con el promedio anual de temperatura mas alta es:Cantabria      35.33 ºC
+La ciudad con el promedio anual de temperatura mas baja es:Malaga         19.00 ºC
 
 Resumen de las ciudades con temperaturas mas altas del año (ordenado ascendentemente)
 ==========================================================================================
-	Cuenca      33.00ºC		Cáceres     32.83ºC		Avila       29.67ºC
-	Formentera  29.67ºC		Asturias    29.58ºC		Barcelona   27.50ºC
-	Ceuta       24.75ºC		Córdoba     24.67ºC		Alicante    24.50ºC
-	Alava       24.42ºC		Ciudad Real 23.67ºC		Cádiz       23.42ºC
-	Cantabria   23.42ºC		Burgos      23.00ºC		Girona      22.00ºC
-	Castellón   20.67ºC		Malaga      20.17ºC		Almería     19.58ºC
-	Badajoz     18.58ºC		Albacete    18.00ºC	
+	Cantabria   35.33ºC		Badajoz     34.67ºC		Alicante    34.58ºC
+	Córdoba     33.58ºC		Girona      32.75ºC		Formentera  32.17ºC
+	Ceuta       31.17ºC		Castellón   30.67ºC		Cádiz       29.92ºC
+	Almería     29.42ºC		Barcelona   29.42ºC		Cáceres     28.67ºC
+	Ciudad Real 27.92ºC		Avila       26.08ºC		Cuenca      25.17ºC
+	Asturias    21.83ºC		Alava       21.67ºC		Albacete    21.42ºC
+	Burgos      21.25ºC		Malaga      19.00ºC	
 ==========================================================================================

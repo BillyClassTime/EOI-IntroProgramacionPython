@@ -52,15 +52,16 @@ archivo.write("Total de personas: {}\n".format(len(mujeres) + len(hombres)))
 archivo.write("="*100+'\n')
 sl='\n'
 columna=1
-archivo.write("\nMujeres:")
+archivo.write("\nMujeres:[")
 for mujer in mujeres:
-    archivo.write("{}{}".format(mujer,('{}{}'.format(',',sl) if columna<=(len(mujeres)-1) else "]") if columna%30 == 0 else ','))
+    #archivo.write("{}{}".format(mujer,('{}{}'.format(',',sl) if columna<=(len(mujeres)-1) else "]") if columna%30 == 0 else ','))
+    archivo.write("{}{}".format(mujer,f'{","}{sl}' if columna%31 == 0 else (',' if columna<=(len(mujeres)-1) else "]")))
     columna+=1
 print(columna)
-archivo.write("\nHombres: ")
+archivo.write("\nHombres:[")
 columna=1
 for hombre in hombres:
-    archivo.write("{}{}".format(hombre,('{}{}'.format(',',sl) if columna<=(len(hombres)-1) else "]") if columna%30 == 0 else ','))
+    archivo.write("{}{}".format(hombre,f'{","}{sl}' if columna%31 == 0 else (',' if columna<=(len(hombres)-1) else "]")))
     columna+=1
 archivo.write(f'{sl}{"="*100}{sl}')
 
