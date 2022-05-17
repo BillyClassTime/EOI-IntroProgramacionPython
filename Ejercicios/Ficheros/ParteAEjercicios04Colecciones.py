@@ -11,6 +11,6 @@ for ciudad in ListaCiudades: # Recorremos la lista de ciudades
     dicc[ciudad] = listatemperaturas
 print(dicc)
 
-file='./Ejercicios/Ficheros/Data_ejercios04.txt'
+file='./Ejercicios/Ficheros/Data_ejercicios04.txt'
 leer_escribir(file,dicc)
 
