@@ -1,5 +1,6 @@
 #https://medium.com/analytics-vidhya/crud-operations-in-mongodb-using-python-49b7850d627e
 #https://www.dev2qa.com/how-to-drop-mongodb-database-and-collection-use-pymongo-in-python/s
+#Query and Projection Operators:https://www.mongodb.com/docs/manual/reference/operator/query/
 from pymongo import MongoClient
 
 def connectdb():
