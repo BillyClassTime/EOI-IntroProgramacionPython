@@ -1,0 +1,25 @@
+{
+    "args": {},
+    "data": "",
+    "files": {},
+    "form": {
+        "Nombre": "Billy",
+        "Apellidos": "Vanegas"
+    },
+    "headers": {
+        "x-forwarded-proto": "http",
+        "x-forwarded-port": "80",
+        "host": "postman-echo.com",
+        "x-amzn-trace-id": "Root=1-628ca2e2-72a5f9e7340ae6802ac37bdf",
+        "content-length": "30",
+        "user-agent": "python-requests/2.27.1",
+        "accept-encoding": "gzip, deflate",
+        "accept": "*/*",
+        "content-type": "application/x-www-form-urlencoded"
+    },
+    "json": {
+        "Nombre": "Billy",
+        "Apellidos": "Vanegas"
+    },
+    "url": "http://postman-echo.com/post"
+}

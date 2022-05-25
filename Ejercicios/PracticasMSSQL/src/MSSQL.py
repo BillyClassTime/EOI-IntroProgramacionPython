@@ -19,6 +19,22 @@ def insert(con,cur):
     cem=input("Enter customer Email:")
     cct=input("Enter customer City:")
     #create the Insert query
+    """ esto es lo que he traido de ms management studio (visor)
+    INSERT INTO [dbo].[customer]
+            ([CustID]
+            ,[CustName]
+            ,[CustAddress]
+            ,[CustPhone]
+            ,[CustEmail]
+            ,[CustCity])
+        VALUES
+            (<CustID, int,>
+            ,<CustName, varchar(50),>
+            ,<CustAddress, varchar(200),>
+            ,<CustPhone, varchar(20),>
+            ,<CustEmail, varchar(50),>
+            ,<CustCity, varchar(50),>)
+    """
     sql = f"""INSERT INTO customer (CustID, 
     CustName, CustAddress,CustPhone, CustEmail, CustCity) 
     VALUES ({cid},'{cnm}','{cad}','{cph}','{cem}','{cct}')"""
@@ -27,8 +43,6 @@ def insert(con,cur):
     #Execute query with values
     # Do the insert
     cur.execute(sql)
-    #commit the transaction
-    con.commit()
     #commit for permanent storage in database
     con.commit()
     #display success message
@@ -43,6 +57,16 @@ def update(con,cur):
     cem=input("Enter customer Email:")
     cct=input("Enter customer City:")
     #create update query
+    """
+    UPDATE [dbo].[customer]
+    SET 
+      [CustName] = <CustName, varchar(50),>
+      ,[CustAddress] = <CustAddress, varchar(200),>
+      ,[CustPhone] = <CustPhone, varchar(20),>
+      ,[CustEmail] = <CustEmail, varchar(50),>
+      ,[CustCity] = <CustCity, varchar(50),>
+    WHERE [CustID] = <int>
+    """
     sql = f"""update customer set CustName='{cnm}', 
     CustAddress='{cad}',CustPhone='{cph}', CustEmail='{cem}', 
     CustCity='{cct}' where CustID={cid}"""
@@ -58,6 +82,10 @@ def delete(con,cur):
     #read the customer ID for which record to be deleted
     cid=input("Enter customer ID to delete:")
     #Create Delete Query
+    """
+    DELETE FROM [dbo].[customer]
+      WHERE <Search Conditions,,>
+    """
     sql = f"delete FROM customer where CustID = '{cid}'"
     #execute delete query
     cur.execute(sql)
@@ -81,12 +109,12 @@ def display(cur):
         print('{:6} {:10} {:12} {:10} {:10} {:6}'.format(str(x[0]),x[1],x[2],x[5],x[3],x[4]))
     print(linea)  
 
-def main():
+def main(mostrarVersion=False):
 
-    server = '(localdb)\ProjectsV13'
+    server = 'mssql'
     database = 'bikerentdb' 
     username = 'developer' 
-    password = 'P4$$w0rd' 
+    password = 'P4$$w0rd.1234' 
 
     #Conecction String
     driver='DRIVER={ODBC Driver 17 for SQL Server};'
@@ -94,9 +122,10 @@ def main():
     connection_string='{}{}'.format(driver,others)
     con = pyodbc.connect(connection_string)
     cur = con.cursor()
-    res=cur.execute("SELECT @@VERSION AS 'SQL Server Version Details'")
-    for r in res:
-        print(r[0])
+    if mostrarVersion:
+        res=cur.execute("SELECT @@VERSION AS 'SQL Server Version Details'")
+        for r in res:
+            print(r[0])
 
     #display menu until user presses 5
 

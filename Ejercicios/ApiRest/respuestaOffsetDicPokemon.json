@@ -1,0 +1,87 @@
+{
+    "count": 1295,
+    "next": "https://pokeapi.co/api/v2/pokemon-form?offset=60&limit=20",
+    "previous": "https://pokeapi.co/api/v2/pokemon-form?offset=20&limit=20",
+    "results": [
+        {
+            "name": "zubat",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/41/"
+        },
+        {
+            "name": "golbat",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/42/"
+        },
+        {
+            "name": "oddish",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/43/"
+        },
+        {
+            "name": "gloom",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/44/"
+        },
+        {
+            "name": "vileplume",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/45/"
+        },
+        {
+            "name": "paras",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/46/"
+        },
+        {
+            "name": "parasect",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/47/"
+        },
+        {
+            "name": "venonat",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/48/"
+        },
+        {
+            "name": "venomoth",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/49/"
+        },
+        {
+            "name": "diglett",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/50/"
+        },
+        {
+            "name": "dugtrio",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/51/"
+        },
+        {
+            "name": "meowth",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/52/"
+        },
+        {
+            "name": "persian",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/53/"
+        },
+        {
+            "name": "psyduck",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/54/"
+        },
+        {
+            "name": "golduck",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/55/"
+        },
+        {
+            "name": "mankey",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/56/"
+        },
+        {
+            "name": "primeape",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/57/"
+        },
+        {
+            "name": "growlithe",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/58/"
+        },
+        {
+            "name": "arcanine",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/59/"
+        },
+        {
+            "name": "poliwag",
+            "url": "https://pokeapi.co/api/v2/pokemon-form/60/"
+        }
+    ]
+}

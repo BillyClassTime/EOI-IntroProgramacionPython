@@ -3,26 +3,27 @@
 #Query and Projection Operators:https://www.mongodb.com/docs/manual/reference/operator/query/
 from pymongo import MongoClient
 
-def connectdb():
+def connectdb(version=False):
     clientDB = MongoClient('mongodb://localhost:27017/')
     db = clientDB.admin
-    resultado = db.command('serverStatus')
-    print('Host:',resultado['host'])
-    print('Version:',resultado['version'])
-    print('Process:',resultado['process'])
-    print(clientDB.list_database_names())
+    if version:
+        resultado = db.command('serverStatus')
+        print('Host:',resultado['host'])
+        print('Version:',resultado['version'])
+        print('Process:',resultado['process'])
+        print(clientDB.list_database_names())
     return clientDB
 
 #Create a database
 def CreateDB(name,clientDb):
     database_name=name #'Students'
-    db=clientDb[database_name]
+    db=clientDb[database_name] #si existe BBDD conectese y si no creala
     return db
 
 #Create a collection
 def createCollection(name,db):
     collection_name=name #'computer science'
-    collection=db[collection_name]
+    collection=db[collection_name]  #si existe coleccion abrala (conectese) y si no creela
     print(db.list_collection_names())
     return collection
 
@@ -84,7 +85,7 @@ if __name__ == '__main__':
     client=None
     db=None
     col=None
-    while 1:
+    while True:
         print('1 - Connect Mongo')
         print('2 - Create Database')
         print('3 - Create a collection')

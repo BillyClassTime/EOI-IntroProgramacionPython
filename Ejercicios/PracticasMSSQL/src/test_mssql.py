@@ -1,9 +1,9 @@
 import pyodbc 
 
-server = '(localdb)\ProjectsV13'
+server = 'mssql'
 database = 'bikerentdb' 
 username = 'developer' 
-password = 'P4$$w0rd' 
+password = 'P4$$w0rd.1234' 
 
 #Conecction String
 driver='DRIVER={ODBC Driver 17 for SQL Server};'
