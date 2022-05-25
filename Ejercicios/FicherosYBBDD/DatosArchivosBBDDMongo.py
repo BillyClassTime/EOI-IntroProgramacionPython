@@ -64,9 +64,12 @@ def retrievingDocument(query,col):
 
 
 if __name__ == '__main__':
-    lista=["hola","caracola"]
+   # lista=["hola","caracola"] Aqui se pone el proceso de generar los datos
+    lista=[]
+   #
    # try:
-    fichero_procesar='./src/datos/caracola2.txt'
+    fichero_procesar='./datos/Data_ejercicios04.txt' #copiar aqui el fichero resultante de 
+                                                     #almacenar los datos de las colecciones
     con=None
     db=None
     col=None
